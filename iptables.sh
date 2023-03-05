@@ -28,3 +28,5 @@ iptables -A OUTPUT -j DROP
 sleep 5
 
 iptables -F
+
+iptables-save
