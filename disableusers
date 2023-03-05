@@ -2,5 +2,7 @@
 
 for user in `users.txt`
 do
-usermod -L $user
+usermod -s /usr/bin/false $user
 done
+
+cat /etc/passwd | grep false
