@@ -1,0 +1,6 @@
+#!/bin/sh
+
+for user in `users.txt`
+do
+usermod -L $user
+done
