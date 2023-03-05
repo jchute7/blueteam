@@ -1,8 +1,8 @@
 #!/bin/sh
 
-for user in `users.txt`
+while read user
 do
-usermod -s /usr/bin/false $user
-done
+  usermod -s /usr/bin/false ${user}
+﻿done < users.txt
 
 cat /etc/passwd | grep false
