@@ -3,6 +3,6 @@
 while read user
 do
   usermod -s /usr/bin/false ${user}
-﻿done < users.txt
+done < disabledusers.txt
 
 cat /etc/passwd | grep false
